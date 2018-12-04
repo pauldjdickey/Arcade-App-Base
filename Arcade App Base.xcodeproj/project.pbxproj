@@ -1,0 +1,591 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2D7A1F0621B63396006C1D5D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D7A1F0521B63396006C1D5D /* AppDelegate.swift */; };
+		2D7A1F0821B63396006C1D5D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D7A1F0721B63396006C1D5D /* ViewController.swift */; };
+		2D7A1F0B21B63396006C1D5D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D7A1F0921B63396006C1D5D /* Main.storyboard */; };
+		2D7A1F0D21B63397006C1D5D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2D7A1F0C21B63397006C1D5D /* Assets.xcassets */; };
+		2D7A1F1021B63397006C1D5D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D7A1F0E21B63397006C1D5D /* LaunchScreen.storyboard */; };
+		2D7A1F1B21B63397006C1D5D /* Arcade_App_BaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D7A1F1A21B63397006C1D5D /* Arcade_App_BaseTests.swift */; };
+		2D7A1F2621B63397006C1D5D /* Arcade_App_BaseUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D7A1F2521B63397006C1D5D /* Arcade_App_BaseUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2D7A1F1721B63397006C1D5D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2D7A1EFA21B63395006C1D5D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2D7A1F0121B63396006C1D5D;
+			remoteInfo = "Arcade App Base";
+		};
+		2D7A1F2221B63397006C1D5D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2D7A1EFA21B63395006C1D5D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2D7A1F0121B63396006C1D5D;
+			remoteInfo = "Arcade App Base";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2D7A1F0221B63396006C1D5D /* Arcade App Base.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Arcade App Base.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2D7A1F0521B63396006C1D5D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2D7A1F0721B63396006C1D5D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		2D7A1F0A21B63396006C1D5D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2D7A1F0C21B63397006C1D5D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2D7A1F0F21B63397006C1D5D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2D7A1F1121B63397006C1D5D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2D7A1F1621B63397006C1D5D /* Arcade App BaseTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Arcade App BaseTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2D7A1F1A21B63397006C1D5D /* Arcade_App_BaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Arcade_App_BaseTests.swift; sourceTree = "<group>"; };
+		2D7A1F1C21B63397006C1D5D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2D7A1F2121B63397006C1D5D /* Arcade App BaseUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Arcade App BaseUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2D7A1F2521B63397006C1D5D /* Arcade_App_BaseUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Arcade_App_BaseUITests.swift; sourceTree = "<group>"; };
+		2D7A1F2721B63397006C1D5D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2D7A1EFF21B63396006C1D5D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2D7A1F1321B63397006C1D5D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2D7A1F1E21B63397006C1D5D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2D7A1EF921B63395006C1D5D = {
+			isa = PBXGroup;
+			children = (
+				2D7A1F0421B63396006C1D5D /* Arcade App Base */,
+				2D7A1F1921B63397006C1D5D /* Arcade App BaseTests */,
+				2D7A1F2421B63397006C1D5D /* Arcade App BaseUITests */,
+				2D7A1F0321B63396006C1D5D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2D7A1F0321B63396006C1D5D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2D7A1F0221B63396006C1D5D /* Arcade App Base.app */,
+				2D7A1F1621B63397006C1D5D /* Arcade App BaseTests.xctest */,
+				2D7A1F2121B63397006C1D5D /* Arcade App BaseUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2D7A1F0421B63396006C1D5D /* Arcade App Base */ = {
+			isa = PBXGroup;
+			children = (
+				2D7A1F0521B63396006C1D5D /* AppDelegate.swift */,
+				2D7A1F0721B63396006C1D5D /* ViewController.swift */,
+				2D7A1F0921B63396006C1D5D /* Main.storyboard */,
+				2D7A1F0C21B63397006C1D5D /* Assets.xcassets */,
+				2D7A1F0E21B63397006C1D5D /* LaunchScreen.storyboard */,
+				2D7A1F1121B63397006C1D5D /* Info.plist */,
+			);
+			path = "Arcade App Base";
+			sourceTree = "<group>";
+		};
+		2D7A1F1921B63397006C1D5D /* Arcade App BaseTests */ = {
+			isa = PBXGroup;
+			children = (
+				2D7A1F1A21B63397006C1D5D /* Arcade_App_BaseTests.swift */,
+				2D7A1F1C21B63397006C1D5D /* Info.plist */,
+			);
+			path = "Arcade App BaseTests";
+			sourceTree = "<group>";
+		};
+		2D7A1F2421B63397006C1D5D /* Arcade App BaseUITests */ = {
+			isa = PBXGroup;
+			children = (
+				2D7A1F2521B63397006C1D5D /* Arcade_App_BaseUITests.swift */,
+				2D7A1F2721B63397006C1D5D /* Info.plist */,
+			);
+			path = "Arcade App BaseUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2D7A1F0121B63396006C1D5D /* Arcade App Base */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2D7A1F2A21B63397006C1D5D /* Build configuration list for PBXNativeTarget "Arcade App Base" */;
+			buildPhases = (
+				2D7A1EFE21B63396006C1D5D /* Sources */,
+				2D7A1EFF21B63396006C1D5D /* Frameworks */,
+				2D7A1F0021B63396006C1D5D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Arcade App Base";
+			productName = "Arcade App Base";
+			productReference = 2D7A1F0221B63396006C1D5D /* Arcade App Base.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2D7A1F1521B63397006C1D5D /* Arcade App BaseTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2D7A1F2D21B63397006C1D5D /* Build configuration list for PBXNativeTarget "Arcade App BaseTests" */;
+			buildPhases = (
+				2D7A1F1221B63397006C1D5D /* Sources */,
+				2D7A1F1321B63397006C1D5D /* Frameworks */,
+				2D7A1F1421B63397006C1D5D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2D7A1F1821B63397006C1D5D /* PBXTargetDependency */,
+			);
+			name = "Arcade App BaseTests";
+			productName = "Arcade App BaseTests";
+			productReference = 2D7A1F1621B63397006C1D5D /* Arcade App BaseTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		2D7A1F2021B63397006C1D5D /* Arcade App BaseUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2D7A1F3021B63397006C1D5D /* Build configuration list for PBXNativeTarget "Arcade App BaseUITests" */;
+			buildPhases = (
+				2D7A1F1D21B63397006C1D5D /* Sources */,
+				2D7A1F1E21B63397006C1D5D /* Frameworks */,
+				2D7A1F1F21B63397006C1D5D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2D7A1F2321B63397006C1D5D /* PBXTargetDependency */,
+			);
+			name = "Arcade App BaseUITests";
+			productName = "Arcade App BaseUITests";
+			productReference = 2D7A1F2121B63397006C1D5D /* Arcade App BaseUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2D7A1EFA21B63395006C1D5D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Paul Dickey";
+				TargetAttributes = {
+					2D7A1F0121B63396006C1D5D = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					2D7A1F1521B63397006C1D5D = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 2D7A1F0121B63396006C1D5D;
+					};
+					2D7A1F2021B63397006C1D5D = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 2D7A1F0121B63396006C1D5D;
+					};
+				};
+			};
+			buildConfigurationList = 2D7A1EFD21B63395006C1D5D /* Build configuration list for PBXProject "Arcade App Base" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2D7A1EF921B63395006C1D5D;
+			productRefGroup = 2D7A1F0321B63396006C1D5D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2D7A1F0121B63396006C1D5D /* Arcade App Base */,
+				2D7A1F1521B63397006C1D5D /* Arcade App BaseTests */,
+				2D7A1F2021B63397006C1D5D /* Arcade App BaseUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2D7A1F0021B63396006C1D5D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2D7A1F1021B63397006C1D5D /* LaunchScreen.storyboard in Resources */,
+				2D7A1F0D21B63397006C1D5D /* Assets.xcassets in Resources */,
+				2D7A1F0B21B63396006C1D5D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2D7A1F1421B63397006C1D5D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2D7A1F1F21B63397006C1D5D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2D7A1EFE21B63396006C1D5D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2D7A1F0821B63396006C1D5D /* ViewController.swift in Sources */,
+				2D7A1F0621B63396006C1D5D /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2D7A1F1221B63397006C1D5D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2D7A1F1B21B63397006C1D5D /* Arcade_App_BaseTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2D7A1F1D21B63397006C1D5D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2D7A1F2621B63397006C1D5D /* Arcade_App_BaseUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2D7A1F1821B63397006C1D5D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2D7A1F0121B63396006C1D5D /* Arcade App Base */;
+			targetProxy = 2D7A1F1721B63397006C1D5D /* PBXContainerItemProxy */;
+		};
+		2D7A1F2321B63397006C1D5D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2D7A1F0121B63396006C1D5D /* Arcade App Base */;
+			targetProxy = 2D7A1F2221B63397006C1D5D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		2D7A1F0921B63396006C1D5D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2D7A1F0A21B63396006C1D5D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		2D7A1F0E21B63397006C1D5D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2D7A1F0F21B63397006C1D5D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2D7A1F2821B63397006C1D5D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		2D7A1F2921B63397006C1D5D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2D7A1F2B21B63397006C1D5D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = S6TAY9VTDK;
+				INFOPLIST_FILE = "Arcade App Base/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.pauldjdickey.Arcade-App-Base";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2D7A1F2C21B63397006C1D5D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = S6TAY9VTDK;
+				INFOPLIST_FILE = "Arcade App Base/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.pauldjdickey.Arcade-App-Base";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		2D7A1F2E21B63397006C1D5D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = S6TAY9VTDK;
+				INFOPLIST_FILE = "Arcade App BaseTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.pauldjdickey.Arcade-App-BaseTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Arcade App Base.app/Arcade App Base";
+			};
+			name = Debug;
+		};
+		2D7A1F2F21B63397006C1D5D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = S6TAY9VTDK;
+				INFOPLIST_FILE = "Arcade App BaseTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.pauldjdickey.Arcade-App-BaseTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Arcade App Base.app/Arcade App Base";
+			};
+			name = Release;
+		};
+		2D7A1F3121B63397006C1D5D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = S6TAY9VTDK;
+				INFOPLIST_FILE = "Arcade App BaseUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.pauldjdickey.Arcade-App-BaseUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Arcade App Base";
+			};
+			name = Debug;
+		};
+		2D7A1F3221B63397006C1D5D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = S6TAY9VTDK;
+				INFOPLIST_FILE = "Arcade App BaseUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.pauldjdickey.Arcade-App-BaseUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Arcade App Base";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D7A1EFD21B63395006C1D5D /* Build configuration list for PBXProject "Arcade App Base" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2D7A1F2821B63397006C1D5D /* Debug */,
+				2D7A1F2921B63397006C1D5D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D7A1F2A21B63397006C1D5D /* Build configuration list for PBXNativeTarget "Arcade App Base" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2D7A1F2B21B63397006C1D5D /* Debug */,
+				2D7A1F2C21B63397006C1D5D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D7A1F2D21B63397006C1D5D /* Build configuration list for PBXNativeTarget "Arcade App BaseTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2D7A1F2E21B63397006C1D5D /* Debug */,
+				2D7A1F2F21B63397006C1D5D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D7A1F3021B63397006C1D5D /* Build configuration list for PBXNativeTarget "Arcade App BaseUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2D7A1F3121B63397006C1D5D /* Debug */,
+				2D7A1F3221B63397006C1D5D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2D7A1EFA21B63395006C1D5D /* Project object */;
+}

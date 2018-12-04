@@ -14,6 +14,9 @@
 		2D7A1F1021B63397006C1D5D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D7A1F0E21B63397006C1D5D /* LaunchScreen.storyboard */; };
 		2D7A1F1B21B63397006C1D5D /* Arcade_App_BaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D7A1F1A21B63397006C1D5D /* Arcade_App_BaseTests.swift */; };
 		2D7A1F2621B63397006C1D5D /* Arcade_App_BaseUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D7A1F2521B63397006C1D5D /* Arcade_App_BaseUITests.swift */; };
+		2D7A1F3421B6344D006C1D5D /* LocationsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D7A1F3321B6344D006C1D5D /* LocationsModel.swift */; };
+		2D7A1F3621B63645006C1D5D /* DistanceCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D7A1F3521B63645006C1D5D /* DistanceCalculator.swift */; };
+		2DBD13D021B7072C0021E89D /* pointsData.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2DBD13CF21B7072C0021E89D /* pointsData.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +50,9 @@
 		2D7A1F2121B63397006C1D5D /* Arcade App BaseUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Arcade App BaseUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D7A1F2521B63397006C1D5D /* Arcade_App_BaseUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Arcade_App_BaseUITests.swift; sourceTree = "<group>"; };
 		2D7A1F2721B63397006C1D5D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2D7A1F3321B6344D006C1D5D /* LocationsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationsModel.swift; sourceTree = "<group>"; };
+		2D7A1F3521B63645006C1D5D /* DistanceCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DistanceCalculator.swift; sourceTree = "<group>"; };
+		2DBD13CF21B7072C0021E89D /* pointsData.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = pointsData.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +87,7 @@
 				2D7A1F1921B63397006C1D5D /* Arcade App BaseTests */,
 				2D7A1F2421B63397006C1D5D /* Arcade App BaseUITests */,
 				2D7A1F0321B63396006C1D5D /* Products */,
+				2D7A1F3721B6FF01006C1D5D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,10 +106,13 @@
 			children = (
 				2D7A1F0521B63396006C1D5D /* AppDelegate.swift */,
 				2D7A1F0721B63396006C1D5D /* ViewController.swift */,
+				2D7A1F3321B6344D006C1D5D /* LocationsModel.swift */,
+				2D7A1F3521B63645006C1D5D /* DistanceCalculator.swift */,
 				2D7A1F0921B63396006C1D5D /* Main.storyboard */,
 				2D7A1F0C21B63397006C1D5D /* Assets.xcassets */,
 				2D7A1F0E21B63397006C1D5D /* LaunchScreen.storyboard */,
 				2D7A1F1121B63397006C1D5D /* Info.plist */,
+				2DBD13CF21B7072C0021E89D /* pointsData.plist */,
 			);
 			path = "Arcade App Base";
 			sourceTree = "<group>";
@@ -123,6 +133,13 @@
 				2D7A1F2721B63397006C1D5D /* Info.plist */,
 			);
 			path = "Arcade App BaseUITests";
+			sourceTree = "<group>";
+		};
+		2D7A1F3721B6FF01006C1D5D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -193,6 +210,14 @@
 				TargetAttributes = {
 					2D7A1F0121B63396006C1D5D = {
 						CreatedOnToolsVersion = 10.1;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.Maps.iOS = {
+								enabled = 0;
+							};
+						};
 					};
 					2D7A1F1521B63397006C1D5D = {
 						CreatedOnToolsVersion = 10.1;
@@ -231,6 +256,7 @@
 			files = (
 				2D7A1F1021B63397006C1D5D /* LaunchScreen.storyboard in Resources */,
 				2D7A1F0D21B63397006C1D5D /* Assets.xcassets in Resources */,
+				2DBD13D021B7072C0021E89D /* pointsData.plist in Resources */,
 				2D7A1F0B21B63396006C1D5D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -256,8 +282,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2D7A1F3621B63645006C1D5D /* DistanceCalculator.swift in Sources */,
 				2D7A1F0821B63396006C1D5D /* ViewController.swift in Sources */,
 				2D7A1F0621B63396006C1D5D /* AppDelegate.swift in Sources */,
+				2D7A1F3421B6344D006C1D5D /* LocationsModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

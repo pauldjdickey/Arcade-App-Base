@@ -22,8 +22,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
     @IBOutlet weak var pauseButton: UIButton!
     @IBOutlet weak var endButton: UIButton!
     @IBOutlet weak var checkInLabel: UIButton!
-    @IBOutlet weak var pointLabel: UILabel!
-    
+    @IBOutlet weak var pointLabel: UILabel!    
     
     override func viewDidLoad() {
         super.viewDidLoad()

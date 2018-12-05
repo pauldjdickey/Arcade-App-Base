@@ -9,10 +9,13 @@
 import UIKit
 import CoreLocation
 
-class ViewController: UIViewController, CLLocationManagerDelegate {
 
+class ViewController: UIViewController, CLLocationManagerDelegate, UIApplicationDelegate {
+
+    let appDelegate = UIApplication.shared.delegate as! AppDelegate
     let locationsModel = LocationsModel()
     let locationManager = CLLocationManager()
+    let currentDateTime = Date()
     var previousPoints:Int = 0
     var counter = 0.0
     var timer = Timer()
@@ -32,7 +35,10 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
         pauseButton.isHidden = true
         endButton.isHidden = true
         timeLabel.isHidden = true
+        NotificationCenter.default.addObserver(self, selector:#selector(doSomething), name: UIApplication.willEnterForegroundNotification, object: nil)
+
     }
+    
     @IBAction func checkInButton(_ sender: UIButton) {
         locationManager.delegate = self
         locationManager.desiredAccuracy = kCLLocationAccuracyBest
@@ -52,9 +58,9 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
     @IBAction func pauseTimer(_ sender: Any) {
         startButton.isEnabled = true
         pauseButton.isEnabled = false
-        
         timer.invalidate()
         isPlaying = false
+        print(appDelegate.arriveTime - appDelegate.leaveTime)
     }
     @IBAction func resetTimer(_ sender: Any) {
         startButton.isEnabled = true
@@ -79,6 +85,13 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
         counter = counter + 0.1
         timeLabel.text = String(format: "%.1f", counter)
     }
+    @objc func doSomething(){
+        print("User Loaded Back")
+        if isPlaying == true {
+            print("Timer is running and now updated")
+        counter = counter + appDelegate.timeDifference
+        }
+    }
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) { // This is the method that gets activated once the location manager has found a GPS coordinate // This saves the location into an array called [CLLocation] // This will create a bunch of locations, but the last value is the one that we want, as its most accurate for the user
         let location = locations[locations.count - 1] // This will find the last location put into the array
         
@@ -89,6 +102,8 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
             print("longitude = \(location.coordinate.longitude), latitude = \(location.coordinate.latitude)")
             
             let check = locationsModel.canWeWorkout(latitude: location.coordinate.latitude, longitude: location.coordinate.longitude)
+            //let check = locationsModel.canWeWorkout(latitude: 36.6658, longitude: -121.8099)
+            //Use this one when testing on computer.
             print(check)
             
             if check == true {

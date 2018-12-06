@@ -16,6 +16,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate, UIApplication
     let locationsModel = LocationsModel()
     let locationManager = CLLocationManager()
     let currentDateTime = Date()
+    var geofenceRegion = CLCircularRegion()
     var previousPoints:Int = 0
     var counter = 0.0
     var timer = Timer()
@@ -80,6 +81,8 @@ class ViewController: UIViewController, CLLocationManagerDelegate, UIApplication
         endButton.isHidden = true
         timeLabel.isHidden = true
         checkInLabel.isHidden = false
+        self.locationManager.stopMonitoring(for: geofenceRegion)
+        print("User has ended the workout, and the monitor for geofence has stopped")
     }
     @objc func UpdateTimer() {
         counter = counter + 0.1
@@ -118,7 +121,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate, UIApplication
                 /* Create a region centered on desired location,
                  choose a radius for the region (in meters)
                  choose a unique identifier for that region */
-                let geofenceRegion = CLCircularRegion(
+                    geofenceRegion = CLCircularRegion(
                     center: geofenceRegionCenter,
                     radius: 100,
                     identifier: "UniqueIdentifier"
@@ -128,6 +131,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate, UIApplication
                 geofenceRegion.notifyOnExit = true
                 // This will only notify us or do something when we have left
                 self.locationManager.startMonitoring(for: geofenceRegion)
+                print("Monitoring for geolocation with center \(location.coordinate.latitude) \(location.coordinate.latitude) has begun")
                 print("Lets do it!")
                 startButton.isHidden = false
                 pauseButton.isHidden = false

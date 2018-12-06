@@ -39,10 +39,10 @@ class LocationsModel {
                                                       longitude:-121.6414).distance(from: fromLocation),
                     coordinate : CLLocationCoordinate2DMake(36.6706,-121.6414)),
             Places( title: "Courthouse",
-                    cllocation: CLLocation(latitude:36.6706,longitude:-121.6414), regionRadius:150.0, location:"Starbucks",
-                    type: "Gym",distance : CLLocation(latitude:36.6706,
-                                                      longitude:-121.6414).distance(from: fromLocation),
-                    coordinate : CLLocationCoordinate2DMake(36.6706,-121.6414)),
+                    cllocation: CLLocation(latitude:36.6748,longitude:-121.6585), regionRadius:150.0, location:"Starbucks",
+                    type: "Gym",distance : CLLocation(latitude:36.6748,
+                                                      longitude:-121.6585).distance(from: fromLocation),
+                    coordinate : CLLocationCoordinate2DMake(36.6748,-121.6585)),
         ]
         
         //Before sort the array

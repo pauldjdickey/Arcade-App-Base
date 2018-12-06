@@ -123,7 +123,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate, UIApplication
                  choose a unique identifier for that region */
                     geofenceRegion = CLCircularRegion(
                     center: geofenceRegionCenter,
-                    radius: 100,
+                    radius: 50,
                     identifier: "UniqueIdentifier"
                 )
                 // This creates the parameters for our geolocation w/ an identifier (We can add 20 geofences)

@@ -21,13 +21,13 @@
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
 	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
-	<string>We need your location.</string>
+	<string>Allow location access for geofencing goodness</string>
 	<key>NSLocationAlwaysUsageDescription</key>
-	<string>We need your location.</string>
+	<string>Allow location access for geofencing goodness</string>
 	<key>NSLocationUsageDescription</key>
 	<string>We need your location.</string>
 	<key>NSLocationWhenInUseUsageDescription</key>
-	<string>We need your location.</string>
+	<string>Allow location access for geofencing goodness</string>
 	<key>UIBackgroundModes</key>
 	<array>
 		<string>fetch</string>

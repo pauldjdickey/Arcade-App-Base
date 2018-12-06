@@ -29,6 +29,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate, UIApplication
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.locationManager.requestAlwaysAuthorization()
         timeLabel.text = String(counter)
         pauseButton.isEnabled = false
         startButton.isHidden = true
@@ -100,12 +101,33 @@ class ViewController: UIViewController, CLLocationManagerDelegate, UIApplication
             
             print("longitude = \(location.coordinate.longitude), latitude = \(location.coordinate.latitude)")
             
+            //let check = locationsModel.canWeWorkout(latitude: location.coordinate.latitude, longitude: location.coordinate.longitude)
             let check = locationsModel.canWeWorkout(latitude: location.coordinate.latitude, longitude: location.coordinate.longitude)
-            //let check = locationsModel.canWeWorkout(latitude: 36.6658, longitude: -121.8099)
+            let savedLatitude = location.coordinate.latitude
+            let savedLongitude = location.coordinate.longitude
             //Use this one when testing on computer.
             print(check)
             
             if check == true {
+                let geofenceRegionCenter = CLLocationCoordinate2D(
+                    latitude: savedLatitude,
+                    longitude: savedLongitude
+                    // This sets up our geofence and will not change until workout is complete.
+                    // If we are ready to start a workout, it creates a geofence based on the current location (Have to put location.coordinate.latitude/longitude in)
+                )
+                /* Create a region centered on desired location,
+                 choose a radius for the region (in meters)
+                 choose a unique identifier for that region */
+                let geofenceRegion = CLCircularRegion(
+                    center: geofenceRegionCenter,
+                    radius: 100,
+                    identifier: "UniqueIdentifier"
+                )
+                // This creates the parameters for our geolocation w/ an identifier (We can add 20 geofences)
+                //geofenceRegion.notifyOnEntry = true
+                geofenceRegion.notifyOnExit = true
+                // This will only notify us or do something when we have left
+                self.locationManager.startMonitoring(for: geofenceRegion)
                 print("Lets do it!")
                 startButton.isHidden = false
                 pauseButton.isHidden = false

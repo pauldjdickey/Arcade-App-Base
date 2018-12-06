@@ -32,9 +32,7 @@ class LocationsModel {
                     cllocation: CLLocation(latitude:36.6658,longitude:-121.8099), regionRadius:150.0, location:"Starbucks",
                     type: "Gym",distance : CLLocation(latitude:36.6658,
                                                       longitude:-121.8099).distance(from: fromLocation),
-                    coordinate : CLLocationCoordinate2DMake(36.6658,-121.8099)),
-            
-            
+                    coordinate : CLLocationCoordinate2DMake(36.6658,-121.8099))
         ]
         
         //Before sort the array

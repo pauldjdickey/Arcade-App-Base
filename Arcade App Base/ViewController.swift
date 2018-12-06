@@ -35,8 +35,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate, UIApplication
         pauseButton.isHidden = true
         endButton.isHidden = true
         timeLabel.isHidden = true
-        NotificationCenter.default.addObserver(self, selector:#selector(doSomething), name: UIApplication.willEnterForegroundNotification, object: nil)
-
+        NotificationCenter.default.addObserver(self, selector:#selector(upDateTimeDifference), name: UIApplication.willEnterForegroundNotification, object: nil)
     }
     
     @IBAction func checkInButton(_ sender: UIButton) {
@@ -85,7 +84,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate, UIApplication
         counter = counter + 0.1
         timeLabel.text = String(format: "%.1f", counter)
     }
-    @objc func doSomething(){
+    @objc func upDateTimeDifference(){
         print("User Loaded Back")
         if isPlaying == true {
             print("Timer is running and now updated")
@@ -122,5 +121,6 @@ class ViewController: UIViewController, CLLocationManagerDelegate, UIApplication
             }
         }
     }
-}
+    }
+
 

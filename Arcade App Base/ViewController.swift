@@ -131,7 +131,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate, UIApplication
                 geofenceRegion.notifyOnExit = true
                 // This will only notify us or do something when we have left
                 self.locationManager.startMonitoring(for: geofenceRegion)
-                print("Monitoring for geolocation with center \(location.coordinate.latitude) \(location.coordinate.latitude) has begun")
+                print("Monitoring for geolocation with center \(location.coordinate.latitude) \(location.coordinate.latitude) has started")
                 print("Lets do it!")
                 startButton.isHidden = false
                 pauseButton.isHidden = false

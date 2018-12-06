@@ -57,8 +57,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         // customize your notification content
         let content = UNMutableNotificationContent()
-        content.title = "Error"
-        content.body = "You left your workout"
+        content.title = "Your workout has ended"
+        content.body = "Click to see how many points you earned!"
         content.sound = UNNotificationSound.default
         
         // when the notification will be triggered
@@ -124,16 +124,6 @@ extension AppDelegate: CLLocationManagerDelegate {
             // Do what you want if this information
             self.handleEvent(forRegion: region)
             print("User has left the area")
-//            let viewController = ViewController()
-//            viewController.timer.invalidate()
-//            viewController.isPlaying = false
-//            viewController.counter = 0.0
-//            viewController.timeLabel.text = "0.0"
-//            viewController.startButton.isHidden = true
-//            viewController.pauseButton.isHidden = true
-//            viewController.endButton.isHidden = true
-//            viewController.timeLabel.isHidden = true
-//            viewController.checkInLabel.isHidden = false
         }
         // This will be activated once the user has moved and left the geofence location. It will then handle the event to send a notification
     }

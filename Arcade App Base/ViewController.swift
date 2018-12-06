@@ -39,7 +39,6 @@ class ViewController: UIViewController, CLLocationManagerDelegate, UIApplication
         timeLabel.isHidden = true
         NotificationCenter.default.addObserver(self, selector:#selector(upDateTimeDifference), name: UIApplication.willEnterForegroundNotification, object: nil)
     }
-    
     @IBAction func checkInButton(_ sender: UIButton) {
         locationManager.delegate = self
         locationManager.desiredAccuracy = kCLLocationAccuracyBest
@@ -52,7 +51,6 @@ class ViewController: UIViewController, CLLocationManagerDelegate, UIApplication
         }
         startButton.isEnabled = false
         pauseButton.isEnabled = true
-        
         timer = Timer.scheduledTimer(timeInterval: 0.1, target: self, selector: #selector(UpdateTimer), userInfo: nil, repeats: true)
         isPlaying = true
     }
@@ -131,7 +129,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate, UIApplication
                 geofenceRegion.notifyOnExit = true
                 // This will only notify us or do something when we have left
                 self.locationManager.startMonitoring(for: geofenceRegion)
-                print("Monitoring for geolocation with center \(location.coordinate.latitude) \(location.coordinate.latitude) has started")
+                print("Monitoring for geolocation with center \(location.coordinate.latitude) \(location.coordinate.longitude) has started")
                 print("Lets do it!")
                 startButton.isHidden = false
                 pauseButton.isHidden = false
